@@ -860,8 +860,17 @@ __SYSCALL(__NR_faccessat2, sys_faccessat2)
 #define __NR_process_madvise 440
 __SYSCALL(__NR_process_madvise, sys_process_madvise)
 
+#define __NR_get_pagetable_layout 441
+__SYSCALL(__NR_get_pagetable_layout, sys_get_pagetable_layout)
+
+#define __NR_expose_page_table 442
+__SYSCALL(__NR_expose_page_table, sys_expose_page_table)
+
+#define __NR_get_pa_contents 443
+__SYSCALL(__NR_get_pa_contents, sys_get_pa_contents)
+
 #undef __NR_syscalls
-#define __NR_syscalls 441
+#define __NR_syscalls 444
 
 /*
  * 32 bit systems traditionally used different
